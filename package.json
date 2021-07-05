@@ -1,0 +1,30 @@
+{
+  "name": "doycoin",
+  "version": "1.0.0",
+  "description": "Desc",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node-dev src --no-notify --ignore src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jodev97/doycoin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jodev97/doycoin/issues"
+  },
+  "homepage": "https://github.com/Jodev97/doycoin#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0"
+  }
+}
