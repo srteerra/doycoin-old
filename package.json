@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jodev97/doycoin#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
