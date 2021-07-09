@@ -3,4 +3,5 @@ Git_commands.txt
 .env
 webpack.config.js
 src/App/main.js
-sr/public/index.html
+src/public/index.html
+src/middlewares/SetupWallet
