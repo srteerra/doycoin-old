@@ -1,0 +1,7 @@
+node_modules
+Git_commands.txt
+.env
+webpack.config.js
+src/App/main.js
+src/public/index.html
+src/middlewares/SetupWallet.js
