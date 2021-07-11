@@ -1,25 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoyCoin</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link href="css/index.css" rel="stylesheet"/>
+  <script src="js/scrollreveal.js"></script>
+  <title>DoyCoin | Plant a tree</title>
 </head>
-<body>
-    <button id="connect">Conectar</button>
-    <div id="content" style="display: none;">
-        <h1>Tu cuenta:</h1>
-        <span id="account"></span>
-        <form id="send">
-            <label >Address</label>
-            <input id="recipient" type="text" placeholder="Destino">
-
-            <label >Cantidad</label>
-            <input id="amount" type="number" placeholder="cantida">
-            <input type="submit"></input>
-        </form>
+<body id="page-top">
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container-fluid d-flex px-5 py-3"><a class="navbar-brand" href="#">
+        <!-- img(src="assets/logo.png", alt="", style='width:170px', id='DCLogo')-->
+        <h2>DoyCoin</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#">Contact us</a></li>
+          <li class="nav-item px-2"><a class="nav-link btn btn-primary rounded-pill py-3 px-4" href="#">Join now</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="./js/bundle.js"></script>
+  </nav>
+  <!-- Main-->
+  <main>
+    <div class="container position-absolute top-50 start-50 translate-middle p-4">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10">
+          <p class="fs-6" id="">0,000,000</p>
+          <p>TREES PLANTED</p>
+        </div>
+        <div class="col-lg-8">
+          <button class="btn btn-primary text-dark py-4 px-5 rounded-pill border-0 btn-sm" data-bs-toggle="modal" data-bs-target="#donateModal">PLANT A TREE</button>
+          <p class="my-4">We accept <span class="fw-bold">Credit Card</span>, <span class="fw-bold">PayPal </span>and your <span class="fw-bold">Cryptos </span>as payment method.</p>
+          <p class="my-4">$1 = Tree</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Ends of Main-->
+  <!-- Modal-->
+  <div class="modal" tabindex="-1" id="donateModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg rounded-pill">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your contribution is important!</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container p-5">
+              <div class="mb-3">
+                <label class="form-label" for="InputEmail">Email address</label>
+                <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="InputAddress">Address</label>
+                <input class="form-control" id="InputAddress" type="address" aria-describedby="addressHelp"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="InputAmout">Amount</label>
+                <input class="form-control" id="InputAmout" type="amount" aria-describedby="amountHelp"/>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" type="button">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ends of Modal-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
-</html>
