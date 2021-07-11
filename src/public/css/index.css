@@ -11462,11 +11462,54 @@ li {
   list-style: none;
 }
 
-a .navbar-light .navbar-nav .nav-link .nav-main-button {
-  background-color: greenyellow;
-  padding: 20px;
+#mainNav {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  opacity: 70%;
+}
+#mainNav .navbar-nav .nav-item .nav-link:active {
+  opacity: 60%;
 }
 
+@media (min-width: 992px) {
+  #mainNav {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:hover {
+    color: #292929;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: #292929;
+  }
+
+  #mainNav.navbar-scrolled {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  #mainNav.navbar-scrolled .navbar-brand {
+    color: #292929;
+  }
+  #mainNav.navbar-scrolled .navbar-brand:hover {
+    color: #f4623a;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #292929;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    opacity: 60%;
+  }
+}
 #main-count {
   font-size: 6rem;
 }
