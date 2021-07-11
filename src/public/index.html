@@ -36,7 +36,7 @@
         <div class="col-lg-8">
           <button class="btn btn-primary text-dark py-4 px-5 rounded-pill border-0 btn-sm" data-bs-toggle="modal" data-bs-target="#donateModal">PLANT A TREE</button>
           <p class="my-4">We accept <span class="fw-bold">Credit Card</span>, <span class="fw-bold">PayPal </span>and your <span class="fw-bold">Cryptos </span>as payment method.</p>
-          <p class="my-4">$1 = Tree</p>
+          <p class="my-4 fw-bold">$1 = Tree</p>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
   <!-- Ends of Main-->
   <!-- Modal-->
   <div class="modal" tabindex="-1" id="donateModal">
-    <div class="modal-dialog modal-dialog-centered modal-lg rounded-pill">
+    <div class="modal-dialog modal-dialog-centered modal-md rounded-pill">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Your contribution is important!</h5>
@@ -54,16 +54,17 @@
           <form>
             <div class="container p-5">
               <div class="mb-3">
-                <label class="form-label" for="InputEmail">Email address</label>
+                <label class="form-label" for="InputEmail">Your mail</label>
                 <input class="form-control" id="InputEmail" type="email" aria-describedby="emailHelp"/>
               </div>
               <div class="mb-3">
                 <label class="form-label" for="InputAddress">Address</label>
                 <input class="form-control" id="InputAddress" type="address" aria-describedby="addressHelp"/>
               </div>
-              <div class="mb-3">
-                <label class="form-label" for="InputAmout">Amount</label>
-                <input class="form-control" id="InputAmout" type="amount" aria-describedby="amountHelp"/>
+              <div class="mb-3 col-4">
+                <label class="form-label" for="InputAmout">Amount of trees</label>
+                <input class="form-control" id="InputAmout" type="number" aria-describedby="amountHelp" value="1"/>
+                <p class="my-4 fw-bold">$1 = Tree</p>
               </div>
               <div class="d-grid">
                 <button class="btn btn-primary" type="submit">Submit</button>
@@ -71,10 +72,7 @@
             </div>
           </form>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary" type="button">Save changes</button>
-        </div>
+        <div class="modal-footer"></div>
       </div>
     </div>
   </div>

@@ -29,12 +29,12 @@ body(id='page-top')
                   | and your 
                   span(class='fw-bold') Cryptos 
                   | as payment method.
-               p(class='my-4') $1 = Tree
+               p(class='my-4 fw-bold') $1 = Tree
    // Ends of Main
    
    // Modal
    div(class='modal', tabindex='-1', id='donateModal')
-      div(class='modal-dialog modal-dialog-centered modal-lg rounded-pill')
+      div(class='modal-dialog modal-dialog-centered modal-md rounded-pill')
          div(class='modal-content')
             div(class='modal-header')
                h5(class='modal-title') Your contribution is important!
@@ -43,19 +43,18 @@ body(id='page-top')
                form
                   div(class='container p-5')
                      div(class='mb-3')
-                        label(class='form-label', for='InputEmail') Email address
+                        label(class='form-label', for='InputEmail') Your mail
                         input(id='InputEmail', class='form-control', type='email', aria-describedby='emailHelp')
                      div(class='mb-3')
                         label(class='form-label', for='InputAddress') Address
                         input(id='InputAddress', class='form-control', type='address', aria-describedby='addressHelp')
-                     div(class='mb-3')
-                        label(class='form-label', for='InputAmout') Amount
-                        input(id='InputAmout', class='form-control', type='amount', aria-describedby='amountHelp')
+                     div(class='mb-3 col-4')
+                        label(class='form-label', for='InputAmout') Amount of trees
+                        input(id='InputAmout', class='form-control', type='number', aria-describedby='amountHelp', value='1')
+                        p(class='my-4 fw-bold') $1 = Tree
                      div(class='d-grid')
                         button(class='btn btn-primary', type='submit') Submit
             div(class='modal-footer')
-               button(type='button', data-bs-dismiss='modal', class='btn btn-secondary') Close
-               button(type='button', class='btn btn-primary') Save changes
    // Ends of Modal
                
    script(src="js/bootstrap.bundle.min.js")
