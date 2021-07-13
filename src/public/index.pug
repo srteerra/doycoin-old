@@ -39,26 +39,30 @@ body(id='page-top')
    
    // Modal
    div(class='modal', tabindex='-1', id='donateModal')
-      div(class='modal-dialog modal-dialog-centered modal-md rounded-pill')
-         div(class='modal-content')
+      div(class='modal-dialog modal-dialog-centered modal-md')
+         div(class='modal-content payment-modal')
             div(class='modal-header')
                h5(class='modal-title') Your contribution is important!
                button(type='button', data-bs-dismiss='modal', aria-label='Close', class='btn-close')
             div(class='modal-body')
                form
-                  div(class='container p-5')
+                  div(class='container pt-5 px-4')
                      div(class='mb-3')
                         label(class='form-label', for='InputEmail') Your email
-                        input(id='InputEmail', class='form-control', type='email', aria-describedby='emailHelp')
+                        input(id='InputEmail', class='form-control rounded-pill', type='email', aria-describedby='emailHelp')
                      div(class='mb-3')
-                        label(class='form-label', for='InputAddress') Address
-                        input(id='InputAddress', class='form-control', type='address', aria-describedby='addressHelp')
+                        select(class="form-select rounded-pill" aria-label="Default select example")
+                           option(selected) Choose the payment method
+                           option(value='1') Metamask
+                           option(value='2') PayPal
                      div(class='mb-3 col-4')
                         label(class='form-label', for='InputAmout') Amount of trees
-                        input(id='InputAmout', class='form-control', type='number', aria-describedby='amountHelp', value='1')
+                        input(id='InputAmout', class='form-control rounded-pill', type='number', aria-describedby='amountHelp', value='1')
                         p(class='my-4 fw-bold') $1 = Tree
                      div(class='d-grid')
-                        button(class='btn btn-primary', type='submit') Submit
+                        button(class='btn btn-primary rounded-pill', type='submit') Submit
+                     div(class='d-flex justify-content-center')
+                        img(src='assets/main-logo-black.png', alt='logo', style='width:250px')
             div(class='modal-footer')
    // Ends of Modal
    include components/includes/footer.pug

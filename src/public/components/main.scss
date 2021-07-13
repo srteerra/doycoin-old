@@ -32,3 +32,15 @@ a {
 li {
     list-style: none;
 }
+
+.payment-modal {
+   padding: 20px;
+   border-radius: 50px;
+}
+
+@media (max-width: 576px) {
+   .payment-modal {
+      padding: 0;
+      border-radius: 0;
+   }
+}
