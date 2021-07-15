@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development node-dev src --no-notify --ignore src/app",
     "serve": "webpack serve --mode=development",
+<<<<<<< HEAD
+=======
+    "watch": "webpack watch --mode=development",
+>>>>>>> fd8816f2ee34a23e1955b8310c060579104035fd
     "build:prod": "webpack --mode=production --node-env=production"
   },
   "repository": {
@@ -21,6 +25,10 @@
   "homepage": "https://github.com/Jodev97/doycoin#readme",
   "dependencies": {
     "@metamask/detect-provider": "^1.2.0",
+<<<<<<< HEAD
+=======
+    "axios": "^0.21.1",
+>>>>>>> fd8816f2ee34a23e1955b8310c060579104035fd
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -33,6 +41,10 @@
     "mongoose": "^5.13.2",
     "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0",
+<<<<<<< HEAD
+=======
+    "node-dev": "^7.0.0",
+>>>>>>> fd8816f2ee34a23e1955b8310c060579104035fd
     "nodemailer": "^6.6.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",

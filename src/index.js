@@ -14,7 +14,11 @@ const passport = require('passport')
 const app =express()
 //require('./database')
 //require('./lib/SetupAuth')
+<<<<<<< HEAD
 require('./middlewares/SetupWallet')
+=======
+//require('./middlewares/SetupWallet')
+>>>>>>> fd8816f2ee34a23e1955b8310c060579104035fd
 
 //----->Settings
 app.set('port',process.env.PORT|| 3000)
@@ -39,7 +43,11 @@ app.use(passport.session())
 //app.use(wallet.Connect)
 
 //Routes
+<<<<<<< HEAD
 //app.use('/api/v1',require('./routes'))
+=======
+app.use('/api/v1',require('./routes'))
+>>>>>>> fd8816f2ee34a23e1955b8310c060579104035fd
 //Static files
 app.use(express.static(path.join(__dirname,'public')))
 //Start Server
