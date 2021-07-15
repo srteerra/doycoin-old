@@ -4,7 +4,10 @@
   "description": "Desc",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node-dev src --no-notify --ignore src/app"
+    "dev": "cross-env NODE_ENV=development node-dev src --no-notify --ignore src/app",
+    "serve": "webpack serve --mode=development",
+    "watch": "webpack watch --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production"
   },
   "repository": {
     "type": "git",
@@ -18,14 +21,36 @@
   },
   "homepage": "https://github.com/Jodev97/doycoin#readme",
   "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
+    "ethereumjs-tx": "^2.1.2",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.2",
-    "morgan": "^1.10.0"
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "node-dev": "^7.0.0",
+    "nodemailer": "^6.6.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.6.0",
+    "web3": "^1.4.0"
+  },
+  "devDependencies": {
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

@@ -1,0 +1,60 @@
+#mainNav {
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   background-color: #fff;
+   transition: background-color 0.2s ease;
+   .navbar-nav {
+      .nav-item {
+         .nav-link {
+            &:hover {
+               opacity: 70%;
+            }
+            &:active {
+               opacity: 60%;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 992px) {
+   #mainNav {
+      box-shadow: none;
+      background-color: transparent;
+      .navbar-brand {
+         color: rgba(255, 255, 255, 0.7);
+         &:hover {
+            color: #292929;
+         }
+      }
+      .navbar-nav {
+         .nav-item {
+            .nav-link {
+               color: #292929;
+            }
+         }
+      }
+   }
+
+   #mainNav {
+      &.navbar-scrolled {
+         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+         background-color: #fff;
+         .navbar-brand {
+            color: #292929;
+            &:hover {
+               color: #f4623a;
+            }
+         }
+         .navbar-nav {
+            .nav-item {
+               .nav-link {
+                  color: #292929;
+                  &:hover {
+                     opacity: 60%;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
