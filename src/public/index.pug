@@ -40,13 +40,13 @@ body(id='page-top')
       div(class='py-5 bg-body content')
          div(class='container-fluid p-5')
             div(class='row')
-               div(class='col-12 col-xl-5 offset-xl-1  p-5')
+               div(class='col-12 col-xl-5 offset-xl-1 p-5')
                   span(class='text-success fw-bolder fs-4') DoyCoin
                   h3(class='fw-bolder fs-1') How it 
                      span(class='text-success') works?
-                  p(class=' fw-bold fs-5 pe-lg-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.
+                  p(class='fw-bold fs-5 pe-lg-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.
                div(class='col-12 col-xl-5 p-5 d-flex justify-content-xl-end justify-content-center')
-                  img( id ='image__content' src="./assets/sappling-icon.png", alt="image-tree")
+                  img(id='image__content' src="./assets/sappling-icon.png", alt="image-tree")
 
          //Cards
          h2(class='p-5 m-5 text-center fs-1 fw-bolder') How you can
@@ -56,9 +56,9 @@ body(id='page-top')
                div(class='col-xl-4 d-flex justify-content-center mb-5')
                   div(class='card bg-secondary rounded-4' style='width: 22rem;')
                      div(class='card-body p-5')
-                        h6(class =' text-white fs-5') Step1
-                        h5(class ='fw-bolder fs-2 pb-4') Donate what you want
-                        p(class ='card-text pb-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+                        h6(class ='text-white fs-5') Step1
+                        h5(class ='fw-bolder fs-2 pb-2') Donate what you want
+                        p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
                div(class='col-xl-4 d-flex justify-content-center mb-5')
                   div(class='card bg-secondary rounded-4' style='width: 22rem;')
                      div(class='card-body p-5')
@@ -70,13 +70,9 @@ body(id='page-top')
                      div(class='card-body p-5')
                         h6(class =' text-white fs-5') Step3
                         h5(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
-                        p(class ='card-text ') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+                        p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
             //Ends cards
       // Ends content info
-
-
-
-
    // Ends of Main
    
    // Modal
@@ -93,23 +89,24 @@ body(id='page-top')
                         label(class='form-label', for='InputEmail') Your email
                         input(id='InputEmail', class='form-control rounded-pill', type='email', aria-describedby='emailHelp')
                      div(class='mb-3')
-                        button(class="btn  btn-lg" type="button" id="btn_wallet") DoyCoin Wallet
+                        button(class="btn btn-lg" type="button" id="btn_wallet") DoyCoin Wallet
                         p(class="my-4 fw-bold" id="address-info" style="display: none;")
                         h5 or connecte with
-                        button(class="btn  btn-lg" type="button" id="btn_metamask")
-                           img(src="assets/metamask.svg" width="25" height="25") metamask
-                        button(class="btn  btn-lg" type="button" id="btn_paypal")
-                           img(src="assets/Paypal.svg" width="25" height="25") paypal 
+                        button(class="btn btn-lg" type="button" id="btn_metamask")
+                           img(src="assets/metamask.svg")
+                        button(class="btn btn-lg" type="button" id="btn_paypal")
+                           img(src="assets/Paypal.svg") 
                      div(class="mb-3 col-4" id="content-ammount" style="display:none;")
                         label(class="form-label" for="InputAmout") Amount of trees
                         input(class="form-control rounded-pill" id="InputAmout" type="number" aria-describedby="amountHelp" value="1")
-                        p(class="my-4 fw-bold" id="currency-info") $1 = Tree
+                        p(class="my-4 fw-bold" id="currency-info") $1=Tree
                      div(class="d-grid")
                         button(class="btn btn-primary rounded-pill" type="submit") Donate
                      div(class='d-flex justify-content-center')
-                        img(src='assets/main-logo-black.png', alt='logo', style='width:250px')
+                        img(src='assets/main-logo-black.png', alt='logo', style='width:250px;')
             div(class='modal-footer')
    // Ends of Modal
+   
    include components/includes/footer.pug
                
    script(src="js/bootstrap.bundle.min.js")
