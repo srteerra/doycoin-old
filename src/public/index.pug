@@ -51,16 +51,19 @@ body(id='page-top')
                         label(class='form-label', for='InputEmail') Your email
                         input(id='InputEmail', class='form-control rounded-pill', type='email', aria-describedby='emailHelp')
                      div(class='mb-3')
-                        select(class="form-select rounded-pill" aria-label="Default select example")
-                           option(selected) Choose the payment method
-                           option(value='1') Metamask
-                           option(value='2') PayPal
-                     div(class='mb-3 col-4')
-                        label(class='form-label', for='InputAmout') Amount of trees
-                        input(id='InputAmout', class='form-control rounded-pill', type='number', aria-describedby='amountHelp', value='1')
-                        p(class='my-4 fw-bold') $1 = Tree
-                     div(class='d-grid')
-                        button(class='btn btn-primary rounded-pill', type='submit') Submit
+                        button(class="btn  btn-lg" type="button" id="btn_wallet") DoyCoin Wallet
+                        p(class="my-4 fw-bold" id="address-info" style="display: none;")
+                        h5 or connecte with
+                        button(class="btn  btn-lg" type="button" id="btn_metamask")
+                           img(src="assets/metamask.svg" width="25" height="25") metamask
+                        button(class="btn  btn-lg" type="button" id="btn_paypal")
+                           img(src="assets/Paypal.svg" width="25" height="25") paypal 
+                     div(class="mb-3 col-4" id="content-ammount" style="display:none;")
+                        label(class="form-label" for="InputAmout") Amount of trees
+                        input(class="form-control rounded-pill" id="InputAmout" type="number" aria-describedby="amountHelp" value="1")
+                        p(class="my-4 fw-bold" id="currency-info") $1 = Tree
+                     div(class="d-grid")
+                        button(class="btn btn-primary rounded-pill" type="submit") Donate
                      div(class='d-flex justify-content-center')
                         img(src='assets/main-logo-black.png', alt='logo', style='width:250px')
             div(class='modal-footer')
@@ -73,3 +76,4 @@ body(id='page-top')
    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js")
    
    script(src="js/index.js")
+   script(src="js/bundle.js")
