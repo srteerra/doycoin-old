@@ -7485,9 +7485,30 @@ textarea.form-control-lg {
   font-family: var(--bs-font-monospace) !important;
 }
 
+.fs-1 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.fs-2 {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.fs-5 {
+  font-size: 1.25rem !important;
+}
+
 .fs-6 {
   font-size: calc(1.725rem + 5.7vw) !important;
 }
+
 
 .fst-italic {
   font-style: italic !important;
@@ -7694,6 +7715,10 @@ textarea.form-control-lg {
 
 .rounded-3 {
   border-radius: 0.3rem !important;
+}
+
+.rounded-4 {
+  border-radius: 65px !important;
 }
 
 .rounded-circle {
@@ -11524,3 +11549,8 @@ li {
 #main-count {
   font-size: 6rem;
 }
+
+#image__content{
+  width: 319px;
+}
+
