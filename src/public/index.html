@@ -56,21 +56,26 @@
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="sendDonation">
             <div class="container pt-5 px-4">
               <div class="mb-3">
                 <label class="form-label" for="InputEmail">Your email</label>
                 <input class="form-control rounded-pill" id="InputEmail" type="email" aria-describedby="emailHelp"/>
               </div>
               <div class="mb-3">
-                <button class="btn  btn-lg" type="button" id="btn_wallet">DoyCoin Wallet</button>
-                <p class="my-4 fw-bold" id="address-info" style="display: none;"></p>
+                <button class="btn  btn-lg payment-btn" type="button" id="wallet">DoyCoin Wallet</button>
+                <div class="mb-3 col-4 wallet-info" id="address-wallet" style="display: none;">
+                  <p class="my-4 fw-bold wallet-info" ></p>
+                  
+                </div>
+                
+                
                 <h5>or connecte with</h5>
-                <button class="btn  btn-lg" type="button" id="btn_metamask"><img src="assets/metamask.svg" width="25" height="25"> metamask </button>
-                <button class="btn  btn-lg" type="button" id="btn_paypal"><img src="assets/Paypal.svg" width="25" height="25"> paypal </button>
+                <button class="btn  btn-lg payment-btn" type="button" id="metamask"><img src="assets/metamask.svg" width="25" height="25"> metamask </button>
+                <button class="btn  btn-lg payment-btn" type="button" id="paypal"><img src="assets/Paypal.svg" width="25" height="25"> paypal </button>
                 
               </div>
-              <div class="mb-3 col-4" id="content-ammount" style="display:none;">
+              <div class="mb-3 col-4 wallet-info" id="content-ammount" style="display:none;">
                 <label class="form-label" for="InputAmout">Amount of trees</label>
                 <input class="form-control rounded-pill" id="InputAmout" type="number" aria-describedby="amountHelp" value="1"/>
                 <p class="my-4 fw-bold" id="currency-info">$1 = Tree</p>
