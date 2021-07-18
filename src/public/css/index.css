@@ -7625,7 +7625,7 @@ textarea.form-control-lg {
 }
 
 .fs-6 {
-  font-size: calc(1.725rem + 5.7vw) !important;
+  font-size: calc(1.845rem + 7.14vw) !important;
 }
 
 .fs-7 {
@@ -11544,7 +11544,7 @@ textarea.form-control-lg {
   }
 
   .fs-6 {
-    font-size: 6rem !important;
+    font-size: 7.2rem !important;
   }
 }
 @media print {
@@ -11689,4 +11689,8 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#step-card {
+  border-radius: 40px;
 }

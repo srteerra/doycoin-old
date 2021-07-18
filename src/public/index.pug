@@ -24,7 +24,7 @@ body(id='page-top')
                   p(class='') TREES PLANTED
                div(class='col-lg-8')
                   button(class='btn btn-dark py-4 px-5 rounded-pill border-0 btn-sm', data-bs-toggle='modal' data-bs-target='#donateModal') PLANT A TREE!
-                  p(class='my-4') We accept 
+                  p(class='px-5 my-5') We accept 
                      span(class='fw-bold') Credit Card
                      | , 
                      span(class='fw-bold') PayPal 
@@ -50,23 +50,26 @@ body(id='page-top')
          span(class='text-success')  contribute?
       div(class='container')
          div(class='row')
-            div(class='col-xl-4 d-flex justify-content-center mb-5 rounded-pill')
-               div(class='card bg-secondary rounded-5' style='width: 22rem;')
-                  div(class='card-body p-5')
-                     h6(class ='text-white fs-5') Step 1
-                     h5(class ='fw-bolder fs-2 pb-2') Donate what you want
-                     p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+            //Card
             div(class='col-xl-4 d-flex justify-content-center mb-5')
-               div(class='card bg-secondary rounded-4' style='width: 22rem;')
+               div(class='card bg-secondary' style='width: 22rem;' id='step-card')
                   div(class='card-body p-5')
-                     h6(class ='text-white fs-5') Step 2
-                     h5(class ='fw-bolder fs-2 pb-2') Select your payment method
+                     h4(class ='text-white fw-bold') Step 1
+                     h1(class ='fw-bolder fs-2 pb-2') Donate what you want
                      p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+            //Card
             div(class='col-xl-4 d-flex justify-content-center mb-5')
-               div(class='card bg-secondary rounded-4' style='width: 22rem;')
+               div(class='card bg-secondary rounded-4' style='width: 22rem;' id='step-card')
                   div(class='card-body p-5')
-                     h6(class =' text-white fs-5') Step 3
-                     h5(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
+                     h4(class ='text-white fw-bold') Step 2
+                     h1(class ='fw-bolder fs-2 pb-2') Select your payment method
+                     p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+            //Card
+            div(class='col-xl-4 d-flex justify-content-center mb-5')
+               div(class='card bg-secondary rounded-4' style='width: 22rem;' id='step-card')
+                  div(class='card-body p-5')
+                     h4(class =' text-white fw-bold') Step 3
+                     h1(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
                      p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
          //Ends cards
       // Ends content info
