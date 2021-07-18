@@ -1,11 +1,13 @@
 $theme-colors: (
-  "primary":    #7BFF84,
-  "secondary":  #A5E39E,
-  "success":    #45D15C,
+  "primary": #7BFF84,
+  "secondary": #A5E39E,
+  "success": #45D15C,
+  "dark": #101010
 );
 
 $font-sizes: (
-  6: 1rem * 6
+   1: 2.5rem,
+   6: 1rem * 6
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";

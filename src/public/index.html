@@ -49,18 +49,18 @@
     <div class="py-5 bg-body content">
       <div class="container-fluid p-5">
         <div class="row">
-          <div class="col-12 col-xl-5 offset-xl-1 p-5"><span class="text-success fw-bolder fs-4">DoyCoin</span>
-            <h3 class="fw-bolder fs-1">How it <span class="text-success">works?</span></h3>
-            <p class="fw-bold fs-5 pe-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.</p>
+          <div class="col-12 col-xl-5 offset-xl-1 p-5"><span class="text-primary fw-bolder fs-4">DoyCoin</span>
+            <h3 class="fw-bolder fs-1">How it <span class="text-primary">works?</span></h3>
+            <p class="fw-bold pe-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.</p>
           </div>
-          <div class="col-12 col-xl-5 p-5 d-flex justify-content-xl-end justify-content-center"><img id="image__content" src="./assets/sappling-icon.png" alt="image-tree"/></div>
+          <div class="col-12 col-xl-5 d-flex justify-content-xl-end justify-content-center"><img id="image__content" src="assets/sappling-icon.png" alt="image-tree"/></div>
         </div>
       </div>
       <!--Cards-->
       <h2 class="p-5 m-5 text-center fs-1 fw-bolder">How you can<span class="text-success"> contribute?</span></h2>
       <div class="container">
         <div class="row">
-          <div class="col-xl-4 d-flex justify-content-center mb-5">
+          <div class="col-xl-4 d-flex justify-content-center mb-5 rounded-pill">
             <div class="card bg-secondary rounded-4" style="width: 22rem;">
               <div class="card-body p-5">
                 <h6 class="text-white fs-5">Step1</h6>
@@ -96,7 +96,7 @@
   <!-- Ends of Main-->
   <!-- Modal-->
   <div class="modal" tabindex="-1" id="donateModal">
-    <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content payment-modal">
         <div class="modal-header">
           <h5 class="modal-title">Your contribution is important!</h5>
@@ -110,19 +110,21 @@
                 <input class="form-control rounded-pill" id="InputEmail" type="email" aria-describedby="emailHelp"/>
               </div>
               <div class="mb-3">
-                <button class="btn btn-lg" type="button" id="btn_wallet">DoyCoin Wallet</button>
+                <button class="btn btn-outline-dark btn-lg rounded-pill mt-5" type="button" id="btn_wallet">DoyCoin Wallet</button>
                 <p class="my-4 fw-bold" id="address-info" style="display: none;"></p>
-                <h5>or connecte with</h5>
-                <button class="btn btn-lg" type="button" id="btn_metamask"><img src="assets/metamask.svg"/></button>
-                <button class="btn btn-lg" type="button" id="btn_paypal"><img src="assets/Paypal.svg"/></button>
+                <p class="py-4 fw-light">or select a payment method</p>
+                <input class="btn-check-outlined" type="radio" name="option1" autocomplete="off" id="btn_metamask"/>
+                <label class="btn" for="option1"><span><img src="assets/img/metamask.png" style="width: 20px;"/></span> Metamask</label>
+                <input class="btn-check-outlined" type="radio" name="option1" autocomplete="off" id="btn_paypal"/>
+                <label class="btn" for="option1"><span><img src="assets/img/paypal.png" style="width: 20px;"/></span> Paypal</label>
               </div>
-              <div class="mb-3 col-4" id="content-ammount" style="display:none;">
+              <div class="mb-3 col-4 pt-3" id="content-ammount d-none">
                 <label class="form-label" for="InputAmout">Amount of trees</label>
                 <input class="form-control rounded-pill" id="InputAmout" type="number" aria-describedby="amountHelp" value="1"/>
                 <p class="my-4 fw-bold" id="currency-info">$1=Tree</p>
               </div>
               <div class="d-grid">
-                <button class="btn btn-primary rounded-pill" type="submit">Donate</button>
+                <button class="btn btn-dark rounded-pill py-3" type="submit">Donate</button>
               </div>
               <div class="d-flex justify-content-center"><img src="assets/main-logo-black.png" alt="logo" style="width:250px;"/></div>
             </div>

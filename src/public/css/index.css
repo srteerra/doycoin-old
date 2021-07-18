@@ -22,6 +22,7 @@
   --bs-primary: #7BFF84;
   --bs-secondary: #A5E39E;
   --bs-success: #45D15C;
+  --bs-dark: #101010;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -414,6 +415,10 @@ legend + * {
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
 }
 
 ::file-selector-button {
@@ -2470,6 +2475,24 @@ progress {
   background-color: #e9ecef;
   opacity: 1;
 }
+.form-control::-webkit-file-upload-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
@@ -2489,10 +2512,17 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+  .form-control::-webkit-file-upload-button {
+    -webkit-transition: none;
+    transition: none;
+  }
   .form-control::file-selector-button {
     -webkit-transition: none;
     transition: none;
   }
+}
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+  background-color: #dde0e3;
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
@@ -2547,6 +2577,12 @@ progress {
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
+.form-control-sm::-webkit-file-upload-button {
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
@@ -2565,6 +2601,12 @@ progress {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+}
+.form-control-lg::-webkit-file-upload-button {
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
 }
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
@@ -3373,6 +3415,38 @@ textarea.form-control-lg {
   border-color: #45D15C;
 }
 
+.btn-dark {
+  color: #fff;
+  background-color: #101010;
+  border-color: #101010;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #0e0e0e;
+  border-color: #0d0d0d;
+}
+.btn-check:focus + .btn-dark, .btn-dark:focus {
+  color: #fff;
+  background-color: #0e0e0e;
+  border-color: #0d0d0d;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(52, 52, 52, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(52, 52, 52, 0.5);
+}
+.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #0d0d0d;
+  border-color: #0c0c0c;
+}
+.btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(52, 52, 52, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(52, 52, 52, 0.5);
+}
+.btn-dark:disabled, .btn-dark.disabled {
+  color: #fff;
+  background-color: #101010;
+  border-color: #101010;
+}
+
 .btn-outline-primary {
   color: #7BFF84;
   border-color: #7BFF84;
@@ -3451,6 +3525,33 @@ textarea.form-control-lg {
 }
 .btn-outline-success:disabled, .btn-outline-success.disabled {
   color: #45D15C;
+  background-color: transparent;
+}
+
+.btn-outline-dark {
+  color: #101010;
+  border-color: #101010;
+}
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #101010;
+  border-color: #101010;
+}
+.btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(16, 16, 16, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(16, 16, 16, 0.5);
+}
+.btn-check:checked + .btn-outline-dark, .btn-check:active + .btn-outline-dark, .btn-outline-dark:active, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show {
+  color: #fff;
+  background-color: #101010;
+  border-color: #101010;
+}
+.btn-check:checked + .btn-outline-dark:focus, .btn-check:active + .btn-outline-dark:focus, .btn-outline-dark:active:focus, .btn-outline-dark.active:focus, .btn-outline-dark.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(16, 16, 16, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(16, 16, 16, 0.5);
+}
+.btn-outline-dark:disabled, .btn-outline-dark.disabled {
+  color: #101010;
   background-color: transparent;
 }
 
@@ -4928,6 +5029,15 @@ textarea.form-control-lg {
   color: #16431e;
 }
 
+.alert-dark {
+  color: #0a0a0a;
+  background-color: #cfcfcf;
+  border-color: #b7b7b7;
+}
+.alert-dark .alert-link {
+  color: #080808;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5277,6 +5387,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #1c5425;
   border-color: #1c5425;
+}
+
+.list-group-item-dark {
+  color: #0a0a0a;
+  background-color: #cfcfcf;
+}
+.list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
+  color: #0a0a0a;
+  background-color: #bababa;
+}
+.list-group-item-dark.list-group-item-action.active {
+  color: #fff;
+  background-color: #0a0a0a;
+  border-color: #0a0a0a;
 }
 
 .btn-close {
@@ -6361,6 +6485,13 @@ textarea.form-control-lg {
   color: #6ada7d;
 }
 
+.link-dark {
+  color: #101010;
+}
+.link-dark:hover, .link-dark:focus {
+  color: #0d0d0d;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6730,6 +6861,10 @@ textarea.form-control-lg {
 
 .border-success {
   border-color: #45D15C !important;
+}
+
+.border-dark {
+  border-color: #101010 !important;
 }
 
 .border-white {
@@ -7489,26 +7624,9 @@ textarea.form-control-lg {
   font-size: calc(1.375rem + 1.5vw) !important;
 }
 
-.fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
-}
-
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
-}
-
-.fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
-}
-
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-
 .fs-6 {
   font-size: calc(1.725rem + 5.7vw) !important;
 }
-
 
 .fst-italic {
   font-style: italic !important;
@@ -7617,6 +7735,10 @@ textarea.form-control-lg {
   color: #45D15C !important;
 }
 
+.text-dark {
+  color: #101010 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -7651,6 +7773,10 @@ textarea.form-control-lg {
 
 .bg-success {
   background-color: #45D15C !important;
+}
+
+.bg-dark {
+  background-color: #101010 !important;
 }
 
 .bg-body {
@@ -7715,10 +7841,6 @@ textarea.form-control-lg {
 
 .rounded-3 {
   border-radius: 0.3rem !important;
-}
-
-.rounded-4 {
-  border-radius: 65px !important;
 }
 
 .rounded-circle {
@@ -11413,6 +11535,10 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 2.5rem !important;
+  }
+
   .fs-6 {
     font-size: 6rem !important;
   }
@@ -11550,7 +11676,6 @@ li {
   font-size: 6rem;
 }
 
-#image__content{
-  width: 319px;
+#image__content {
+  width: 300px;
 }
-
