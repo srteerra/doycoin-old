@@ -15,7 +15,7 @@ body(id='page-top')
    include components/includes/header.pug
 
    // Main
-   div(class='vh-100 vw-100 d-flex align-items-center justify-content-center' id='main-bg')
+   div(class='vh-100 d-flex align-items-center justify-content-center' id='main-bg')
       div(class='')
          div(class='container')
             div(class='row h-100 align-items-center justify-content-center text-center pt-3')
@@ -43,33 +43,37 @@ body(id='page-top')
                   span(class='text-primary') works?
                p(class='fw-bold pe-lg-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.
             div(class='col-12 col-xl-5 d-none d-lg-flex justify-content-xl-end justify-content-center')
-               img(id='image__content' src="assets/sappling-icon.png", alt="image-tree")
-
+               img(id='image__content' src="assets/info-tree.png", alt="image-tree")
+         div(class='row py-5')
+      
       //Cards
       h2(class='p-5 m-5 text-center fs-1 fw-bolder') How you can
-         span(class='text-success')  contribute?
-      div(class='container')
-         div(class='row')
+         span(class='text-primary')  contribute?
+      div(class='container py-5')
+         div(class='row py-5')
             //Card
-            div(class='col-xl-4 d-flex justify-content-center mb-5')
-               div(class='card bg-secondary' style='width: 22rem;' id='step-card')
-                  div(class='card-body p-5')
+            div(class='col-xl-4 d-flex justify-content-center mb-5 pb-5')
+               div(class='card bg-secondary border-0' style='width: 22rem;' id='step-card')
+                  div(class='card-body p-5 position-relative')
+                     img(src='assets/dollar-icon.png' class='position-absolute' id='cards-icon')
                      h4(class ='text-white fw-bold') Step 1
-                     h1(class ='fw-bolder fs-2 pb-2') Donate what you want
+                     h1(class ='fw-bolder fs-5 pb-2') Donate what you want
                      p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
             //Card
-            div(class='col-xl-4 d-flex justify-content-center mb-5')
-               div(class='card bg-secondary rounded-4' style='width: 22rem;' id='step-card')
-                  div(class='card-body p-5')
+            div(class='col-xl-4 d-flex justify-content-center mb-5 pb-5')
+               div(class='card bg-secondary border-0' style='width: 22rem;' id='step-card')
+                  div(class='card-body p-5 position-relative')
+                     img(src='assets/cryptos-icon.png' class='position-absolute' id='cards-icon')
                      h4(class ='text-white fw-bold') Step 2
-                     h1(class ='fw-bolder fs-2 pb-2') Select your payment method
+                     h1(class ='fw-bolder fs-5 pb-2') Select your payment method
                      p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
             //Card
-            div(class='col-xl-4 d-flex justify-content-center mb-5')
-               div(class='card bg-secondary rounded-4' style='width: 22rem;' id='step-card')
-                  div(class='card-body p-5')
+            div(class='col-xl-4 d-flex justify-content-center mb-5 pb-5')
+               div(class='card bg-secondary border-0' style='width: 22rem;' id='step-card')
+                  div(class='card-body p-5 position-relative')
+                     img(src='assets/trees-icon.png' class='position-absolute' id='cards-icon')
                      h4(class =' text-white fw-bold') Step 3
-                     h1(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
+                     h1(class ='fw-bolder fs-5 pb-2') You already have a tree planted!
                      p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
          //Ends cards
       // Ends content info
