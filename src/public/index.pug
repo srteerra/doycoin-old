@@ -13,20 +13,17 @@ head
 body(id='page-top')
    // Navbar
    include components/includes/header.pug
-   
-   div(class='container position-relative py-4')
-      div(class='row')
-   
+
    // Main
-   main(class='position-relative my-5 py-5')
-      div(class='py-5')
-         div(class='container p-5')
+   div(class='vh-100 vw-100 d-flex align-items-center justify-content-center' id='main-bg')
+      div(class='')
+         div(class='container')
             div(class='row h-100 align-items-center justify-content-center text-center pt-3')
                div(class='col-lg-10')
                   p(class='fs-6', id='') 0,000,000
                   p(class='') TREES PLANTED
                div(class='col-lg-8')
-                  button(class='btn btn-primary text-dark py-4 px-5 rounded-pill border-0 btn-sm', data-bs-toggle='modal' data-bs-target='#donateModal') PLANT A TREE!
+                  button(class='btn btn-dark py-4 px-5 rounded-pill border-0 btn-sm', data-bs-toggle='modal' data-bs-target='#donateModal') PLANT A TREE!
                   p(class='my-4') We accept 
                      span(class='fw-bold') Credit Card
                      | , 
@@ -36,42 +33,42 @@ body(id='page-top')
                      | as payment method.
                   p(class='my-4 fw-bold') $1 = Tree
                   
-      // Content info
-      div(class='py-5 bg-body content')
-         div(class='container-fluid p-5')
-            div(class='row')
-               div(class='col-12 col-xl-5 offset-xl-1 p-5')
-                  span(class='text-primary fw-bolder fs-4') DoyCoin
-                  h3(class='fw-bolder fs-1') How it 
-                     span(class='text-primary') works?
-                  p(class='fw-bold pe-lg-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.
-               div(class='col-12 col-xl-5 d-flex justify-content-xl-end justify-content-center')
-                  img(id='image__content' src="assets/sappling-icon.png", alt="image-tree")
+   // Content info
+   div(class='py-5 bg-body content')
+      div(class='container-fluid p-5')
+         div(class='row')
+            div(class='col-12 col-xl-5 offset-xl-1 p-5')
+               span(class='text-primary fw-bolder fs-4') DoyCoin
+               h3(class='fw-bolder fs-1') How it 
+                  span(class='text-primary') works?
+               p(class='fw-bold pe-lg-5') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. In faucibus nec risus nec lacinia. Duis eu volutpat odio. Nulla in ipsum porta, convallis tortor ac, varius nunc. Curabitur nisl felis, volutpat a semper bibendum, blandit nec arcu. Ut posuere velit sed fringilla auctor.
+            div(class='col-12 col-xl-5 d-none d-lg-flex justify-content-xl-end justify-content-center')
+               img(id='image__content' src="assets/sappling-icon.png", alt="image-tree")
 
-         //Cards
-         h2(class='p-5 m-5 text-center fs-1 fw-bolder') How you can
-            span(class='text-success')  contribute?
-         div(class='container')
-            div(class='row')
-               div(class='col-xl-4 d-flex justify-content-center mb-5 rounded-pill')
-                  div(class='card bg-secondary rounded-4' style='width: 22rem;')
-                     div(class='card-body p-5')
-                        h6(class ='text-white fs-5') Step1
-                        h5(class ='fw-bolder fs-2 pb-2') Donate what you want
-                        p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
-               div(class='col-xl-4 d-flex justify-content-center mb-5')
-                  div(class='card bg-secondary rounded-4' style='width: 22rem;')
-                     div(class='card-body p-5')
-                        h6(class ='text-white fs-5') Step2
-                        h5(class ='fw-bolder fs-2 pb-2') Select your payment method
-                        p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
-               div(class='col-xl-4 d-flex justify-content-center mb-5')
-                  div(class='card bg-secondary rounded-4' style='width: 22rem;')
-                     div(class='card-body p-5')
-                        h6(class =' text-white fs-5') Step3
-                        h5(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
-                        p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
-            //Ends cards
+      //Cards
+      h2(class='p-5 m-5 text-center fs-1 fw-bolder') How you can
+         span(class='text-success')  contribute?
+      div(class='container')
+         div(class='row')
+            div(class='col-xl-4 d-flex justify-content-center mb-5 rounded-pill')
+               div(class='card bg-secondary rounded-5' style='width: 22rem;')
+                  div(class='card-body p-5')
+                     h6(class ='text-white fs-5') Step 1
+                     h5(class ='fw-bolder fs-2 pb-2') Donate what you want
+                     p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+            div(class='col-xl-4 d-flex justify-content-center mb-5')
+               div(class='card bg-secondary rounded-4' style='width: 22rem;')
+                  div(class='card-body p-5')
+                     h6(class ='text-white fs-5') Step 2
+                     h5(class ='fw-bolder fs-2 pb-2') Select your payment method
+                     p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+            div(class='col-xl-4 d-flex justify-content-center mb-5')
+               div(class='card bg-secondary rounded-4' style='width: 22rem;')
+                  div(class='card-body p-5')
+                     h6(class =' text-white fs-5') Step 3
+                     h5(class ='fw-bolder fs-2 pb-2') You already have a tree planted!
+                     p(class ='card-text') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur velit in diam accumsan molestie. 
+         //Ends cards
       // Ends content info
    // Ends of Main
    
@@ -90,7 +87,7 @@ body(id='page-top')
                         input(id='InputEmail', class='form-control rounded-pill', type='email', aria-describedby='emailHelp')
                         
                      div(class='mb-3')
-                        button(class="btn btn-outline-dark btn-lg rounded-pill mt-5" type="button" id="btn_wallet") DoyCoin Wallet
+                        button(class="btn btn-outline-dark btn-lg rounded-pill mt-2 fs-7" type="button" id="btn_wallet") DoyCoin Wallet
                         p(class="my-4 fw-bold" id="address-info" style="display: none;")
                         p(class='py-4 fw-light') or select a payment method
                         

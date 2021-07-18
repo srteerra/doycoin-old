@@ -7628,6 +7628,10 @@ textarea.form-control-lg {
   font-size: calc(1.725rem + 5.7vw) !important;
 }
 
+.fs-7 {
+  font-size: 1rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -11678,4 +11682,11 @@ li {
 
 #image__content {
   width: 300px;
+}
+
+#main-bg {
+  background-image: url("../assets/main-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
