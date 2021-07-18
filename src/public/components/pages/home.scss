@@ -1,5 +1,7 @@
 @import "../main.scss";
+@import "../keyframes.scss";
 @import "../header.scss";
+
 
 #main-count {
    font-size: 6rem;
@@ -26,6 +28,22 @@
    left: 40%;
 }
 
+#modal-icon {
+   width: 150px;
+   top: -100px;
+   left: 70%;
+   z-index: 1;
+
+   &:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+   }
+}
+
+#donate-btn {
+   z-index: 2;
+}
+
 @media screen and (max-width: 1300px) {
    #image__content {
       width: 410px;
@@ -35,6 +53,12 @@
 
 @media screen and (max-width: 1200px) {
    #image__content {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 995px) {
+   #modal-icon {
       display: none;
    }
 }

@@ -113,8 +113,9 @@ body(id='page-top')
                         label(class="form-label" for="InputAmout") Amount of trees
                         input(class="form-control rounded-pill" id="InputAmout" type="number" aria-describedby="amountHelp" value="1")
                         p(class="my-4 fw-bold" id="currency-info") $1=Tree
-                     div(class="d-grid")
-                        button(class="btn btn-dark rounded-pill py-3" type="submit") Donate
+                     div(class="d-grid position-relative")
+                        button(class="btn btn-dark rounded-pill py-3" type="submit" id='donate-btn') Donate
+                        img(src='assets/trees-icon.png' class='position-absolute' id='modal-icon')
                      div(class='d-flex justify-content-center')
                         img(src='assets/main-logo-black.png', alt='logo', style='width:250px;')
             div(class='modal-footer')
