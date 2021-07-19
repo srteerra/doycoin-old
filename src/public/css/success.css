@@ -11787,61 +11787,9 @@ li {
     opacity: 60%;
   }
 }
-#main-count {
-  font-size: 6rem;
-}
-
-#image__content {
-  width: 400px;
-}
-
-#main-bg {
-  background-image: url("../assets/main-bg.png");
+#success-bg {
+  background-image: url("../assets/success-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#step-card {
-  border-radius: 40px;
-}
-
-#cards-icon {
-  width: 150px;
-  top: -80px;
-  left: 45%;
-}
-
-#modal-icon {
-  width: 150px;
-  top: -100px;
-  left: 70%;
-  z-index: 1;
-}
-#modal-icon:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-#donate-btn {
-  z-index: 2;
-}
-
-@media screen and (max-width: 1300px) {
-  #image__content {
-    width: 410px;
-    height: calc(100% - 50px);
-  }
-}
-@media screen and (max-width: 1200px) {
-  #image__content {
-    display: none;
-  }
-}
-@media screen and (max-width: 995px) {
-  #modal-icon {
-    display: none;
-  }
 }

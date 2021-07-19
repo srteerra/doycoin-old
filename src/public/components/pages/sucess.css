@@ -7624,10 +7624,6 @@ textarea.form-control-lg {
   font-size: calc(1.425rem + 2.1vw) !important;
 }
 
-.fs-2 {
-  font-size: calc(1.525rem + 3.3vw) !important;
-}
-
 .fs-5 {
   font-size: calc(1.345rem + 1.14vw) !important;
 }
@@ -11551,10 +11547,6 @@ textarea.form-control-lg {
     font-size: 3rem !important;
   }
 
-  .fs-2 {
-    font-size: 4rem !important;
-  }
-
   .fs-5 {
     font-size: 2.2rem !important;
   }
@@ -11785,63 +11777,5 @@ li {
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     opacity: 60%;
-  }
-}
-#main-count {
-  font-size: 6rem;
-}
-
-#image__content {
-  width: 400px;
-}
-
-#main-bg {
-  background-image: url("../assets/main-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#step-card {
-  border-radius: 40px;
-}
-
-#cards-icon {
-  width: 150px;
-  top: -80px;
-  left: 45%;
-}
-
-#modal-icon {
-  width: 150px;
-  top: -100px;
-  left: 70%;
-  z-index: 1;
-}
-#modal-icon:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-#donate-btn {
-  z-index: 2;
-}
-
-@media screen and (max-width: 1300px) {
-  #image__content {
-    width: 410px;
-    height: calc(100% - 50px);
-  }
-}
-@media screen and (max-width: 1200px) {
-  #image__content {
-    display: none;
-  }
-}
-@media screen and (max-width: 995px) {
-  #modal-icon {
-    display: none;
   }
 }

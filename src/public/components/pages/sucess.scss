@@ -1,0 +1,10 @@
+@import "../main.scss";
+@import "../keyframes.scss";
+@import "../header.scss";
+
+#success-bg {
+   background-image: url('../assets/success-bg.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
