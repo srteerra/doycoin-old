@@ -11742,7 +11742,7 @@ li {
   opacity: 60%;
 }
 #mainNav .navbar-brand #DCLogo {
-  width: 200px;
+  max-width: 200px;
 }
 
 @media (min-width: 992px) {

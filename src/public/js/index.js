@@ -39,10 +39,10 @@ $(document).ready(function() {
    var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
          $("#mainNav").addClass("navbar-scrolled");
-         document.getElementById("DCLogo").src = "assets/main-logo-black.png";
+         document.getElementById("DCLogo").src = "assets/horizontal-logo-black.png";
       } else {
          $("#mainNav").removeClass("navbar-scrolled");
-         document.getElementById("DCLogo").src = "assets/main-logo-black.png";
+         document.getElementById("DCLogo").src = "assets/horizontal-logo-black.png";
       }
    };
    // Collapse now if page is not at top
