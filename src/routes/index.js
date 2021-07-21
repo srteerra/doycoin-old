@@ -1,7 +1,9 @@
 const router = require('express').Router()
 const jwt  = require('jsonwebtoken')
 const {authjwt} = require('../middlewares')
+const CoinGecko = require('coingecko-api')
 
+const coinGeckoClient = new CoinGecko();
 const Donation = require('../models/donation')
 
 router.post("/donated",authjwt.verifyToken,async(req,res,next)=>{
@@ -23,6 +25,15 @@ router.post("/authorization",async(req,res,next)=>{
 
 router.post("/address",async(req,res,next)=>{
     res.status(200).json({address:process.env.RECIVER_ADDRESS})
+})
+
+router.post("/currency",async(req,res,next)=>{
+    const params = {
+        order: CoinGecko.ORDER.MARKET_CAP_DESC
+     };
+    const result = await coinGeckoClient.coins.markets({params});
+    var ether =result.data.find(coin => coin.id ==req.body.currency)
+    res.json(ether.current_price)
 })
 
 

@@ -24,6 +24,7 @@
     "@metamask/detect-provider": "^1.2.0",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
+    "coingecko-api": "^1.0.10",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",

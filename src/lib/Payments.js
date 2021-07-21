@@ -4,6 +4,7 @@ const Web3 = require('web3')
 
 class Payment {
     constructor (){
+        
         this.publicAddresTo=''
         this.publicAddresFrom=''
     }
@@ -94,6 +95,10 @@ class Payment {
     async confirmTransaction(hash){
         var receipt = await web3.eth.getTransactionReceipt(hash);
         return receipt
+    }
+    async USDPrice(currency){   
+        const price = await axios.post('api/v1/currency',{currency:currency})
+        return price
     }
     
 }
