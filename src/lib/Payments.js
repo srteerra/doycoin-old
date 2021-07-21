@@ -28,7 +28,7 @@ class Payment {
                          await window.ethereum.request({method:'eth_requestAccounts'})
                          web3 = new Web3(window.ethereum)
                          let accounts = await web3.eth.getAccounts()
-                         
+                        
                          this.publicAddresFrom=accounts[0] 
                          this.publicAddresTo = await this.getWallet()
                          /*web3.eth.getBalance(accounts[0])
@@ -56,7 +56,7 @@ class Payment {
          
     }
 
-    async transact(amount){
+    async transact(amount,email){
         
         if (Number(amount)<=0) {
             alert('Illegal value')
@@ -74,13 +74,26 @@ class Payment {
             value:web3.utils.toWei(amount.toString(),'ether'),
             chain:'mainnet'
         }
-        web3.eth.sendTransaction(transactionObject,(error,hash)=>{
-            if (error) {
-                alert(error.message)
+       
+        var res = await web3.eth.sendTransaction(transactionObject) 
+        if (res.status) {
+            //Save danation
+            //var data = await web3.eth.getTransaction(res.transactionHash)
+            let donation = {
+                transactionHash: res.transactionHash,
+                provider:'metamask',
+                email:email
             }
            
-        })  
-       
+            axios.post('api/v1/donated',donation)
+        }
+
+        return res.status 
+
+    }
+    async confirmTransaction(hash){
+        var receipt = await web3.eth.getTransactionReceipt(hash);
+        return receipt
     }
     
 }

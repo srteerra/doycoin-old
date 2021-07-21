@@ -12,7 +12,7 @@ const passport = require('passport')
 
 //--->Initializtion
 const app =express()
-//require('./database')
+require('./database')
 //require('./lib/SetupAuth')
 //require('./middlewares/SetupWallet')
 
@@ -34,9 +34,9 @@ app.use(session({
     saveUninitialized:false,
     unset:'destroy'
 }))
+
 app.use(passport.initialize())
 app.use(passport.session())
-//app.use(wallet.Connect)
 
 //Routes
 app.use('/api/v1',require('./routes'))
