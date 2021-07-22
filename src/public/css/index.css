@@ -7806,6 +7806,9 @@ textarea.form-control-lg {
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
 }
+.bg-light{
+  background-color: #f8f9fa!important
+}
 
 .user-select-all {
   -webkit-user-select: all !important;
