@@ -11,7 +11,7 @@
 ### Features
 
 - Pure design
-- Connection with Metamask and Paypal API
+- Connection with Metamask
 - Leaderboard to thank all our contributors and make this planet better
 - Easy UI and a beautiful UX Design
 - The only place you can donate your Cryptos to plant trees around the world
